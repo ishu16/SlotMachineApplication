@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<!--This is the header of the website-->	
+<head>
+	<!--Title-->
+	<title>Slot Machine</title>
+	<!--Links to external scripts-->
+	<meta name="description" content="Welcome to the Javascript.">
+	<link rel="stylesheet" href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<!--Spritely Library of JQuery-->
+	<script src="jquery.spritely.js"></script>
+	<script src="jquery.backgroundPosition.js"></script>
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<!--External Javascript sheet-->
+	<script src="slot.js"></script>
+</head>
+<!--End of header-->
+
+<!--Body-->
+<body>
+	<div class="bd">
+		<h1>SLOT MACHINE</h1>
+		<div class="container">
+			<!--The slots display-->
+			<div class="slot-wrapper">
+				<div id="slot1" class="slot"></div>
+				<div id="slot2" class="slot"></div>
+				<div id="slot3" class="slot"></div>
+				<div class="clear"></div>
+			</div>
+			<!--End of slots display-->
+
+			<!--Results label-->
+			<div id="result"></div>
+			<div id="betAmount-label"></div>
+			<div id="creditAmount-label"></div>
+			<!--End of results-->
+
+			<!--Buttons-->
+			<div class="buttons">
+				<table>
+					<tr>
+						<td><button id="betone">Bet One</button></td>
+						<td><button id="control">Start</button></td>
+						<td><button id="betmax">Bet Max</button></td>
+					</tr>
+					<tr>
+						<td><button id="add-coin">Add Coin</button></td>
+						<td><button id="reset">Reset</button></td>
+						<td><button id="stats">Statistics</button></td>
+					</tr>
+				</table>
+			</div>
+			<!--End of Buttons-->
+		</div>
+		
+		<div class="credits">
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<!--This is the header of the website-->
+	<head>
+		<title>Slot Machine Login</title>
+		<!--Links to external scripts-->
+		<link rel="stylesheet" href="style.css">
+		<!--External Javascript sheet-->
+	</head>
+	<!--End of header-->
+
+	<!--Body-->
+	<body>
+		<div class="loginBox">
+			<img src="user.png" class="user">
+			<h2>Log In Here</h2>
+
+			<!--Form Elements-->
+			<form id="myForm" method="post">
+				<p>User Name</p>
+				<input id="player" type="text" name="" placeholder="Enter User Name">
+				<p>Password</p>
+				<input id="password" type="password" name="" placeholder="••••••">
+				<input id="submit" type="submit" name="" value="Sign In">
+			</form>
+			<!--End of Form Elements-->		
+			<script type="text/javascript">
+				document.getElementById("submit").onclick = function myFunction () {
+					var playerName = document.getElementById("player").value;
+					var passwords = document.getElementById("password").value;
+					//if the most of the player name is the most important thing in the world
+					if (isNaN(playerName) || playerName != ""){
+						alert("Name : "+playerName+".");
+						/**var myObj = {playerName,password};
+						var JSON = JSON.stringify(myObj);
+						document.getElementById("myForm").submit();
+						window.location = "testy.txt?x=" + myJSON;*/
+
+						window.location = "stats.html";
+
+					}else{
+						alert("Please enter a Valid Name");
+					}
+				}
+			</script>	
+		</div>
+	</body>
+</html>

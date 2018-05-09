@@ -1,0 +1,42 @@
+<html>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Task', 'Hours per Day'],
+              ['Work',     11],
+              ['Eat',      2]
+            ]);
+    
+            var options = {
+              title: 'Statistics for Slot Machine',
+              is3D: true,
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+          }
+        </script>
+        <!---->
+        <script src="slot.js"></script>
+        <title>Statistics for Slot Machine</title>
+        <style>
+            #stats{
+                width: 40%; 
+                height: 500px;
+            }
+            #piechart_3d{
+                width: 50%; 
+                height: 500px;
+                float: right;
+            }
+        </style>
+      </head>
+      <body>
+        <div id="piechart_3d"><p></p>></div>
+        <div id="stats"></div>
+      </body>
+      </html>

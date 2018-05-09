@@ -1,0 +1,107 @@
+body {		
+	font-family: verdana, arial;   
+	background: url(back.jpg);
+	background-size: cover;
+	padding: 20px;
+}
+
+.bd {
+	text-align: center;
+	width: 50%;
+	align-content: center;
+	position: relative;
+	left: 25%;
+	background: rgba(0,0,0,.5);
+}
+
+.container {
+	margin: 0 auto;
+	width: 524px;
+}
+
+.slot-wrapper {
+	border: 1px solid #000000;
+}
+
+.slot {
+	background: url("images/reel_normal.png") repeat-y;
+	width: 172px;
+    height: 140px;
+    float: left;
+	border: 1px solid #000;
+	background-position: 0 4px;
+}
+
+.motion {
+	background: url("images/reel_blur.png") repeat-y;		
+}
+
+button {
+	display: block;
+	width: 138px;
+	height: 33px;
+	margin: 20px 15px;
+	font-size: 16px;
+	background: rgba(0,0,0,.5);
+	cursor: pointer;
+	color: white;
+	border-color: greenyellow;
+}
+
+button:hover{
+	color: rgba(0, 136, 170, 0.5);
+}
+button:active{
+	color: #000000;
+	background-color: yellowgreen;
+}
+
+#result {
+	color: #ffffff;
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: bold;
+	height: 22px;
+}
+
+
+.credits {
+	font-style: normal;
+	font-size: 16px;
+	color: #000000;
+	margin-top: 4px;
+	font-size: 15px;
+	margin: 20px 100px;
+	
+}
+
+p, h1 {
+	color: #ffffff;
+	font-family: sans-serif;
+}
+
+#betAmount-label{
+	color: #ffffff;
+}
+
+#creditAmount-label{
+	color: #ffffff;
+}
+
+.clear {
+    clear: both;
+}
+
+#betAmount-label{
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: bold;
+	height: 22px;
+}
+#creditAmount-label{
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: bold;
+	height: 22px;
+}
+
